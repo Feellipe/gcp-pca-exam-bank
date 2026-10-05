@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+# Local working data - never published
+# ---------------------------------------------------------------------------
+work/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Generated artifacts and the video author's material.
+#
+# This repository holds the pipeline. Everything below is either produced BY the
+# pipeline from the source videos, or is the video author's own content, so it is
+# deliberately not published. Rebuild any of it locally with scripts/ - see the
+# README section "Reproducing the bank".
+# ---------------------------------------------------------------------------
+
+# built by scripts/build_exam_db.py
+exam/*.db
+
+# built by scripts/export_exam_app.py; embeds every question and explanation
+exam-app/pca-exam.html
+
+# screenshots of the video's slides
+Questions/
+
+# Google's official exam case-study PDFs (exam material, not ours)
+Case Study/
+
+# generated pages that quote the narration, and their catalogs
+wiki/entities/
+wiki/raw/
+wiki/index.md
+wiki/log.md
